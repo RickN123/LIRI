@@ -10,8 +10,15 @@ var bandsintown = new bandsintown(keys.bandsintown);
 
 axios.get("http://www.omdbapi.com/?t=" + movie + "&ye&plot=short&apikey=trilogy").then(
     function (response) {
-        console.log("The movie's rating is:" + response.data.imdbRating);
-)
+        console.log("Name:")
+        console.log("Release Year:" + response.data.Year);
+
+        console.log("IMDB rating is:" + response.data.imdbRating);
+
+        console.log("Rotten Tomatoes rating is ")
+
+    }
+);
 
 inquirer
     .prompt([
