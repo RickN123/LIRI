@@ -9,11 +9,13 @@ LIRI is available on all major application stores, Google Play as well as Apple 
 
 
 ## Run a Test
--Insert movie-this followed by the film you are looking for to find out information about your favorite film. (Example movie-this Rocky)
+While within the liri.js file in terminal:
 
--Insert concert-this followed by your favorite band or artist to locate concerts.   (Example concert-this DMX)
+-Insert node liri movie-this followed by the film you are looking for to find out information about your favorite film. (Example movie-this Rocky)
 
--Insert spotify-this followed by your favorite artist to look up tracks for your favorite artist or band.  (Example spotify-this Meek Mill)
+-Insert node liri concert-this followed by your favorite band or artist to locate concerts.   (Example concert-this DMX)
+
+-Insert node liri spotify-this followed by your favorite artist to look up tracks for your favorite artist or band.  (Example spotify-this Meek Mill)
 
 ## APIs Used
 Liri leverages IMDB, BandsinTown, and Spotify to deliver information about each search term.

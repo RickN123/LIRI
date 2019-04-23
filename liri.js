@@ -53,8 +53,9 @@ if (search == "spotify-this") {
             return console.log('Error occurred: ' + err);
         }
         console.log("Track: " + data.tracks.items[0].name);
-        console.log("Album: " + data.album[1]);
+        console.log("Album: " + data.album[0].name);
         console.log("Song Preview: " + data.preview_url[0]);
+
     });
 }
 
