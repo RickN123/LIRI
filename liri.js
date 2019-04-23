@@ -8,9 +8,11 @@ var spotify = new Spotify(keys.spotify);
 
 var bandsintown = new bandsintown(keys.bandsintown);
 
+
+
 axios.get("http://www.omdbapi.com/?t=" + movie + "&ye&plot=short&apikey=trilogy").then(
     function (response) {
-        console.log("Name:")
+        console.log("Name:" + response.data.Title);
         console.log("Release Year:" + response.data.Year);
         console.log("IMDB rating is:" + response.data.imdbRating);
         console.log("Rotten Tomatoes rating is: " + response.data.rottentomatoesrating);
@@ -18,8 +20,6 @@ axios.get("http://www.omdbapi.com/?t=" + movie + "&ye&plot=short&apikey=trilogy"
         console.log("Language: " + response.data.Language);
         console.log("Plot: " + response.data.Plot);
         console.log("Actors: " + response.data.Actors);
-
-
     }
 );
 
