@@ -12,10 +12,13 @@ axios.get("http://www.omdbapi.com/?t=" + movie + "&ye&plot=short&apikey=trilogy"
     function (response) {
         console.log("Name:")
         console.log("Release Year:" + response.data.Year);
-
         console.log("IMDB rating is:" + response.data.imdbRating);
+        console.log("Rotten Tomatoes rating is: " + response.data.rottentomatoesrating);
+        console.log("Country Produced: " + response.data.Country);
+        console.log("Language: " + response.data.Language);
+        console.log("Plot: " + response.data.Plot);
+        console.log("Actors: " + response.data.Actors);
 
-        console.log("Rotten Tomatoes rating is ")
 
     }
 );
