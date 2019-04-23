@@ -19,3 +19,6 @@ While within the liri.js file in terminal:
 
 ## APIs Used
 Liri leverages IMDB, BandsinTown, and Spotify to deliver information about each search term.
+
+## Link to Test LIRI!
+https://drive.google.com/open?id=1-vdqGZhPSz9_ns1J9IT-_l39itYzUGyT
