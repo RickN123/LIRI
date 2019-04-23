@@ -46,6 +46,18 @@ if (search == "movie-this") {
     })
 }
 
+if (search == "spotify-this") {
+
+    spotify.search({ type: 'track', query: artist }, function (err, data) {
+        if (err) {
+            return console.log('Error occurred: ' + err);
+        }
+        console.log("Track: " + data.tracks.items[0].name);
+        console.log("Album: " + data.name.album[0].name);
+        console.log("Song Preview: " + data.preview_url)[0];
+    });
+}
+
 
 // inquirer
 //     .prompt([
